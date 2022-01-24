@@ -50,7 +50,7 @@ function myFunction2() {
 	});}
 	
 	function submitemail(){
-		var email = document.getElementById('testform').value;
+		var email = document.getElementById('email').value;
 		analytics.track("Email Submitted", {
 		email: email
 	});}
@@ -518,8 +518,8 @@ function myFunction2() {
           <h1 class="huge ae-1 margin-bottom-2">Download Mobile App</h1>
           <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Learning never exhausts the mind.</span></p>
 
-          <form action="#" autocomplete="off" class="slides-form margin-bottom-3" id ="testform">
-            <input type="email" class="ae-3" name="email" placeholder="E-mail address"/>
+          <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
+            <input type="email" class="ae-3" name="email" placeholder="E-mail address" id ="email"/>
             <button type="submit" class="button blue gradient ae-4" name="submit" onclick="submitemail()">Try it free</button>
           </form>
 

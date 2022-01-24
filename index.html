@@ -50,8 +50,7 @@ function myFunction2() {
 	});}
 	
 	function submitemail(){
-		var form = document.getElementById('testform');
-		var email=form.find('[name=email]').val();
+		var email = document.getElementById('testform').value;
 		analytics.track("Email Submitted", {
 		email: email
 	});}

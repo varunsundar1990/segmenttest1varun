@@ -34,19 +34,27 @@ function myFunction2() {
 	analytics.track("Pricing Selected",{
 		label:"purchase",
 			pricing_option: 'Moon',
-			price: 'price ae-5'
+			price: price ae-5
 });}
 	function myFunction3() {
 	analytics.track("Pricing Selected",{
 		label:"purchase",
 			pricing_option:"Planet",
-			price: "price ae-6"
+			price: price ae-6
 	});}
 	function myFunction4() {
 	analytics.track("Pricing Selected",{
 		label:"purchase",
 			pricing_option: "Galaxy",
-			price: "price ae-7"
+			price: price ae-7
+	});}
+	
+	function submit(e){
+		e.preventDefault();
+		var form=e.target;
+		var email=form["email"].value;
+		analytics.track("Email Submitted", {
+		email: email
 	});}
 </script>
 
@@ -513,7 +521,7 @@ function myFunction2() {
           <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Learning never exhausts the mind.</span></p>
 
           <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
-            <input type="email" class="ae-3" name="email" placeholder="E-mail address"/>
+            <input type="email" class="ae-3" name="email" placeholder="E-mail address" onsubmit="submit()"/>
             <button type="submit" class="button blue gradient ae-4" name="submit">Try it free</button>
           </form>
 

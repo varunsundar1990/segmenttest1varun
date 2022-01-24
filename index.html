@@ -30,7 +30,26 @@
   analytics.track("App Downloaded", {
   label: "get_app"
 });
-}
+function myFunction2() {
+	analytics.track("Pricing Selected",{
+		label:‘purchase’,
+			pricing_option: 'Moon'
+			price: 'price ae-5'
+	});
+	
+	function myFunction3() {
+	analytics.track("Pricing Selected",{
+		label:‘purchase’,
+			pricing_option: 'Planet'
+			price: 'price ae-6'
+	});
+	function myFunction4() {
+	analytics.track("Pricing Selected",{
+		label:‘purchase’,
+			pricing_option: 'Galaxy'
+			price: 'price ae-7'
+	});
+ }
 </script>
 
 	<!-- Fonts and Material Icons -->
@@ -439,7 +458,7 @@
                   <li class="opacity-7">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button blue gradient wide cropSides cropBottom ae-7">Try Free</a>
+              <a href="#" class="button blue gradient wide cropSides cropBottom ae-7" onclick="myFunction2()">Try Free</a>
             </li>
             <li class="col-4-12 ae-4">
               <h3>Planet</h3>
@@ -456,7 +475,7 @@
                   <li class="opacity-8">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button green gradient wide cropSides cropBottom ae-8">Purchase</a>
+              <a href="#" class="button green gradient wide cropSides cropBottom ae-8" onclick="myFunction3()">Purchase</a>
             </li>
             <li class="col-4-12 ae-5">
               <h3>Galaxy</h3>
@@ -474,7 +493,7 @@
                   <li class="opacity-8">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button green gradient wide cropSides cropBottom ae-9">Purchase</a>
+              <a href="#" class="button green gradient wide cropSides cropBottom ae-9" onclick="myFunction4()">Purchase</a>
             </li>
           </ul>
         </div> 

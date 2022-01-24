@@ -49,9 +49,7 @@ function myFunction2() {
 			price: "24"
 	});}
 	
-	function submit(e){
-		e.preventDefault();
-		var form=e.target;
+	function submit(){
 		var email=form["email"].value;
 		analytics.track("Email Submitted", {
 		email: email
